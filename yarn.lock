@@ -2958,6 +2958,11 @@ nuxi@^3.0.0-rc.3:
   optionalDependencies:
     fsevents "~2.3.2"
 
+nuxt-google-maps-module@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/nuxt-google-maps-module/-/nuxt-google-maps-module-1.6.0.tgz#491231f1427257d2463e8c48813348d9e811abe2"
+  integrity sha512-bVYAy74pK1cwDnZVeHU5AdtXujaXZ/mAZKyIzhRnFKkR7HMPNgKzXjtfdstyZb7k0BaYeCKOKXYFvN4goo+7Ng==
+
 nuxt@3.0.0-rc.3:
   version "3.0.0-rc.3"
   resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-3.0.0-rc.3.tgz#ab1a36a19f91f86d5fa42a7d6bb2dec4ae7cf824"

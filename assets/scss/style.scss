@@ -17,6 +17,7 @@ section{
 }
 
     $black: #000000;
+    $white: #fefefe;
 
 h1,h2,h3,h4,h5,h6{ 
     font-family: 'Outfit', sans-serif; 
@@ -27,6 +28,9 @@ h1,h2,h3,h4,h5,h6{
   }
   .font-size-2em{
     font-size: 2em;
+  }
+  .font-size-2-5em{
+      font-size: 2.5em;
   }
   .font-size-3-5em{
     font-size: 3.5em;
@@ -56,8 +60,10 @@ h1,h2,h3,h4,h5,h6{
     left: 0;
     right: 0;
     margin: auto;
-    //background: $black;
+    background-color: $white;
     position: fixed;
+    padding-left: 20px;
+    border-bottom: 1px solid $white;
     width: 85%;
     a{
         padding-right: 20px;
