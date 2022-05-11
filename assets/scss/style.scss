@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&family=Source+Sans+Pro:wght@300;400&display=swap');
+
+body{
+    margin: 0
+}
+
+section{
+    &.container{
+        width: 100%;
+        height: 100vh;
+        .content{
+            width: 85%;
+            padding-top: 80px;
+            margin: 0 auto;
+        }
+    }
+}
+
+    $black: #000000;
+
+h1,h2,h3,h4,h5,h6{ 
+    font-family: 'Outfit', sans-serif; 
+  }
+  p{ font-family: 'Source Sans Pro', sans-serif; }
+  .source-sans{
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  .font-size-2em{
+    font-size: 2em;
+  }
+  .font-size-3-5em{
+    font-size: 3.5em;
+  }
+  .font-size-5-5em{
+    font-size: 5.5em;
+  }
+  .font-size-1em{
+    font-size: 1em;
+  }
+  .font-size-1-25em{
+    font-size: 1.25em;
+  }
+  .font-size-1-5em{
+    font-size: 1.5em;
+  }
+  .font-weight-lighter{
+    font-weight: lighter;
+  }
+  .font-weight-bolder{
+    font-weight: bolder;
+  }
+
+  #navbar{
+    height: 80px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    //background: $black;
+    position: fixed;
+    width: 85%;
+    a{
+        padding-right: 20px;
+        padding-left: 20px;
+        font-family: 'Source Sans Pro', sans-serif;
+        color: #1a1a1a;
+        text-decoration: none;
+    }
+    // border-bottom: 1px solid $black;
+  }
+
+  .flexbox{
+    display: flex;
+    &.justify-center{ justify-content: center; }
+    &.align-center{ align-items: center; }
+    &.justify-between{ justify-content: space-between; }
+    &.wrap{ flex-wrap: wrap; }
+}
