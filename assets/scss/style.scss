@@ -4,10 +4,15 @@ body{
     margin: 0
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 section{
     &.container{
         width: 100%;
         height: 100vh;
+        //background-color: rgba($color: #000000, $alpha: 1.0);
         .content{
             width: 85%;
             padding-top: 80px;
@@ -15,6 +20,10 @@ section{
         }
     }
 }
+
+
+
+
 
     $black: #000000;
     $white: #fefefe;
@@ -38,6 +47,9 @@ h1,h2,h3,h4,h5,h6{
   .font-size-5-5em{
     font-size: 5.5em;
   }
+  .font-size-8em{
+    font-size: 8em;
+  }
   .font-size-1em{
     font-size: 1em;
   }
@@ -54,13 +66,17 @@ h1,h2,h3,h4,h5,h6{
     font-weight: bolder;
   }
 
+  .position-fixed{
+    position: fixed;
+  }
+
   #navbar{
     height: 80px;
     top: 0;
     left: 0;
     right: 0;
     margin: auto;
-    background-color: $white;
+    //background-color: rgba($color: #000000, $alpha: 1.0);
     position: fixed;
     padding-left: 20px;
     border-bottom: 1px solid $white;
@@ -69,7 +85,7 @@ h1,h2,h3,h4,h5,h6{
         padding-right: 20px;
         padding-left: 20px;
         font-family: 'Source Sans Pro', sans-serif;
-        color: #1a1a1a;
+        color: #ffffff;
         text-decoration: none;
     }
     // border-bottom: 1px solid $black;
