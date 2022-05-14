@@ -1,9 +1,9 @@
 <template>
     <div>
         <section id="main" class="container">
-            <div class="content-home flexbox">
-                <div class="flexbox align-center">
-                    <h1 class="font-size-7em color-white half">METALLIC ART SRLS</h1>
+            <div class="content-home flexbox wrap resp-display-block">
+                <div class="flexbox align-center resp-w-100">
+                    <h1 class="font-size-7em color-white half resp-text-vw-10">METALLIC ART SRLS</h1>
                 </div>
                 <div class="flexbox align-center center half">
                     <div>
