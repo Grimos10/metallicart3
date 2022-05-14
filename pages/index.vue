@@ -78,11 +78,33 @@
                         <span style="padding-left: 20px"><p class="color-white font-size-2em" style="margin: 0">metallic.art@pec.it</p></span>
                     </div>
                 </div>
+                <GMapMap
+                    :center="{lat: 51.093048, lng: 6.842120}"
+                    :zoom="7"
+                    map-type-id="terrain"
+                    style="width: 500px; height: 300px"
+                >
+                </GMapMap>
                 <!--QUI È DA METTERE GOOGLE MAPS-->    
             </div>
         </section>
     </div>
 </template>
+
+<script>
+import { defineComponent } from '@vue/composition-api'
+
+export default defineComponent({
+    setup() {
+        
+
+        
+    },
+
+    
+})
+</script>
+
 <style lang="scss">
     section#main{
         background: url(@/assets/img/bg2.jpg) no-repeat center center scroll;

@@ -10,6 +10,7 @@
     "nuxt": "3.0.0-rc.3"
   },
   "dependencies": {
+    "@fawmi/vue-google-maps": "^0.9.67",
     "nuxt-google-maps-module": "^1.6.0",
     "sass": "^1.51.0"
   }
