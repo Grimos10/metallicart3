@@ -88,21 +88,41 @@
                     >
                     </GMapMap>
 
-                -->    
+                    AIzaSyB6RwrzdVoGu07evqP7a2arLfNo9p2ASbY
+
+                -->
+                <div id="map">
+                    
+                    <input class="input" ref="searchTextField" type="text">
+
+                </div>    
             </div>
         </section>
     </div>
 </template>
 
 <script>
-import { defineComponent } from '@vue/composition-api'
+import { defineComponent } from '@vue/composition-api';
 
 export default defineComponent({
     setup() {
         
+        const apiKey = "AIzaSyB6RwrzdVoGu07evqP7a2arLfNo9p2ASbY"; // Package: @nuxtjs/dotenv
 
+        useHead({
+            return: {
+                script: [
+                    {src: `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places`}
+                ]
+            },
+        })
         
-    },
+        onMounted({
+            input: this.$refs.searchTextField, //.getElementById('searchTextField');
+            new: google.maps.places.Autocomplete(input),
+        })
+        
+    }
 
     
 })
@@ -130,5 +150,9 @@ export default defineComponent({
         width: 10%;
         background: transparent;
         border: none;
+    }
+
+    #map{
+        height: 50%;
     }
 </style>
