@@ -88,7 +88,7 @@
                     >
                     </GMapMap>
 
-                    AIzaSyB6RwrzdVoGu07evqP7a2arLfNo9p2ASbY
+                    
 
                 -->
                 <div id="map">
@@ -107,7 +107,7 @@ import { defineComponent } from '@vue/composition-api';
 export default defineComponent({
     setup() {
         
-        const apiKey = "AIzaSyB6RwrzdVoGu07evqP7a2arLfNo9p2ASbY"; // Package: @nuxtjs/dotenv
+        const apiKey = googleApiKey; // Package: @nuxtjs/dotenv
 
         useHead({
             return: {
