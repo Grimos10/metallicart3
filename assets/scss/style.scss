@@ -151,8 +151,8 @@ p{ font-family: 'Source Sans Pro', sans-serif; }
   &.wrap{ flex-wrap: wrap; }
 }
 
-@media screen and (max-width: 930px){
-
+@media screen and (max-width: 767px){
+/*
   .resp-w-100{
     width: 100% !important;
   }
@@ -167,5 +167,15 @@ p{ font-family: 'Source Sans Pro', sans-serif; }
   .resp-text-vw-10{
     font-size: 10vw;
   }
-
+*/
+  
+  .resp-w-100 {
+    width: 100%;
+  }
+  .resp-text-vw-10 {
+    font-size: 10vw;
+  }
+  .resp-display-block {
+    display: block;
+  }
 }
