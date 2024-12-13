@@ -11,6 +11,7 @@
     "nuxt": "^3.11.2"
   },
   "dependencies": {
+    "@nuxt/bridge": "^3.3.1",
     "nuxt-google-maps-module": "^1.6.0",
     "nuxt3": "^3.8.0-28284309.b3d3d7f4",
     "sass": "^1.51.0"
