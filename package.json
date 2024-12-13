@@ -7,11 +7,12 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
-    "nuxt": "3.0.0-rc.3",
-    "@volar-plugins/vetur": "latest"
+    "@volar-plugins/vetur": "latest",
+    "nuxt": "^3.11.2"
   },
   "dependencies": {
     "nuxt-google-maps-module": "^1.6.0",
+    "nuxt3": "^3.8.0-28284309.b3d3d7f4",
     "sass": "^1.51.0"
   }
 }
