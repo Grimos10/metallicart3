@@ -1,8 +1,7 @@
 <template>
     <div>
-        <component :is="layout" />
         <section id="main" class="container">
-            <div class="content-home flexbox wrap">
+            <div class="content-home flexbox">
                 <div class="flexbox align-center">
                     <h1 class="font-size-7em color-white half">METALLIC ART SRLS</h1>
                 </div>
@@ -84,41 +83,6 @@
         </section>
     </div>
 </template>
-<script>
-import { defineComponent } from '@vue/composition-api'
-
-export default defineComponent({
-    setup() {
-    let width = window.innerWidth
-    let useOtherLayout = false
-
-    const updateWidth = () => {
-      width = window.innerWidth
-    }
-
-    onMounted(() => {
-      window.addEventListener('resize', updateWidth)
-    })
-
-    onBeforeUnmount(() => {
-      window.removeEventListener('resize', updateWidth)
-    })
-
-    watch(() => width, (newWidth) => {
-      useOtherLayout = newWidth <= 700
-    })
-
-    return {
-      layout() {
-        if (useOtherLayout) return 'reactive'
-        if (width > 700) return 'default'
-        return 'default'
-      }
-    }
-  }
-})
-</script>
-
 <style lang="scss">
     section#main{
         background: url(@/assets/img/bg2.jpg) no-repeat center center scroll;
